@@ -1,12 +1,17 @@
 import { HeroSection } from "@/components/sections/hero";
+import { TechStackSection } from "@/components/sections/tech-stack";
+import { AboutSection } from "@/components/sections/about";
+import { ProjectsSection } from "@/components/sections/projects";
+import { ContactSection } from "@/components/sections/contact";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <section id="about">{/* About section */}</section>
-      <section id="projects">{/* Projects section */}</section>
-      <section id="contact">{/* Contact section */}</section>
+      <TechStackSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
     </>
   );
 }

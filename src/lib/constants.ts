@@ -3,7 +3,8 @@ export const siteConfig = {
   title: "Software Engineer",
   description:
     "Full-stack developer specializing in React, Next.js, and modern web technologies",
-  url: "https://juliusbaliling.com", // Replace with your actual domain
+  url: "https://juliusbaliling.com",
+  email: "juliusbaliling25@gmail.com",
   links: {
     github: "https://github.com/Illamapalooza",
     linkedin: "https://www.linkedin.com/in/juliusbaliling",

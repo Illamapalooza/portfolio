@@ -50,12 +50,11 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
       className="sticky top-0 z-50 w-full border-b px-8 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
     >
-      <nav className="container flex h-16 items-center justify-between">
+      <nav className="w-full flex h-16 items-center justify-center gap-32">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex items-center gap-6 md:gap-10"
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
           <Link
             href="/"
@@ -66,7 +65,14 @@ export function Navbar() {
               {siteConfig.name}
             </span>
           </Link>
+        </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex items-center gap-6 md:gap-10"
+        >
           <div className="hidden md:flex gap-6">
             {navigationLinks.map((item, index) => (
               <motion.div
