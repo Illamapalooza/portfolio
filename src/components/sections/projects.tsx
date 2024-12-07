@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { projects } from "@/lib/constants";
 import { Button } from "../ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
 
@@ -70,19 +70,8 @@ export function ProjectsSection() {
                         asChild
                       >
                         <Link href="#" target="_blank">
-                          <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-                          Live Demo
-                        </Link>
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="group"
-                        asChild
-                      >
-                        <Link href="#" target="_blank">
-                          <Github className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
-                          Source Code
+                          <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-1" />
+                          Web
                         </Link>
                       </Button>
                     </div>

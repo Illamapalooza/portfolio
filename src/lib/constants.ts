@@ -34,7 +34,7 @@ export const projects = [
       "PostgreSQL",
       "OpenAI",
     ],
-    company: "Hostari Labs",
+    company: "Startup with Hostari Labs",
     type: "Professional",
   },
   {
@@ -45,9 +45,7 @@ export const projects = [
       "Next.js 14",
       "Tailwind CSS",
       "Shadcn UI",
-      "Framer Motion",
       "Supabase",
-      "Lucia",
       "tRPC",
       "React Query",
     ],
@@ -61,7 +59,6 @@ export const projects = [
     tech: [
       "Next.js 14",
       "Tailwind CSS",
-      "Framer Motion",
       "Supabase",
       "Lucia",
       "tRPC",

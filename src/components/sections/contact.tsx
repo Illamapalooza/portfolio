@@ -100,10 +100,8 @@ export function ContactSection() {
             <div className="space-y-4">
               <h4 className="text-lg font-medium">Current Status</h4>
               <div className="flex items-center gap-2">
-                <span className="inline-block h-2 w-2 rounded-full bg-green-500" />
-                <span className="text-muted-foreground">
-                  Available for work
-                </span>
+                <span className="inline-block h-2 w-2 rounded-full bg-red-500" />
+                <span className="text-muted-foreground">Unavailable</span>
               </div>
             </div>
           </motion.div>

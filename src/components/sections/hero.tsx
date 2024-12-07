@@ -26,8 +26,8 @@ export function HeroSection() {
             className="flex flex-col items-start text-left gap-4"
           >
             <div className="flex items-center gap-2 rounded-full border border-border/50 bg-background/50 px-4 py-1 backdrop-blur">
-              <span className="inline-block h-2 w-2 rounded-full bg-green-500" />
-              <span className="text-sm">Available for work</span>
+              <span className="inline-block h-2 w-2 rounded-full bg-red-500" />
+              <span className="text-sm">Unavailable</span>
             </div>
 
             <div className="space-y-2">
@@ -96,13 +96,13 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative w-full aspect-square md:order-last"
+            className="relative w-full aspect-square md:order-last rounded-full border-2 border-black"
           >
             <Image
               src="/developer-illustration.png"
               alt={siteConfig.name}
               fill
-              className="object-contain grayscale hover:grayscale-0 transition-all duration-500"
+              className="object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-full"
               priority
             />
           </motion.div>
