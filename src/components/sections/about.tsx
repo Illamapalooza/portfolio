@@ -56,9 +56,8 @@ const experiences = [
     company: "Zeta",
     period: "September 2024 - Present",
     description: [
-      "Spearheading development of real estate CRM platform",
-      "Implementing modern tech stack with Next.js and tRPC",
-      "Managing end-to-end development lifecycle",
+      "Spearheading technical development of real estate CRM platform",
+      "Implementing modern tech stack with Next.js",
     ],
   },
   {
@@ -161,9 +160,9 @@ export function AboutSection() {
                 Throughout my journey as a software engineer, combining 2 years
                 of hands-on personal projects with 4 months of professional
                 experience, I&apos;ve had the privilege of working on impactful
-                ventures. As a key developer at{" "}
+                ventures. As a startup software engineer collaborating with{" "}
                 <span className="text-primary font-medium">Hostari Labs</span>{" "}
-                startup and technical lead at{" "}
+                and a fullstack developer at{" "}
                 <span className="text-primary font-medium">Zeta</span>,
                 I&apos;ve architected and delivered innovative solutions that
                 directly address real business challenges and user needs. My

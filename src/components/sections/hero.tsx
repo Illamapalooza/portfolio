@@ -42,9 +42,9 @@ export function HeroSection() {
                   sequence={[
                     "Building Solutions That Actually Matter",
                     3000,
-                    "Creating Digital Experiences",
+                    "Fueled by Coffee and Code",
                     3000,
-                    "Transforming Ideas Into Reality",
+                    "Donate Me a Coffee ☕",
                     3000,
                   ]}
                   wrapper="span"

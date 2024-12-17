@@ -38,32 +38,10 @@ export const projects = [
     type: "Professional",
   },
   {
-    title: "NurtureYourLeads",
-    description:
-      "CRM web app for efficiently managing real estate leads and deals",
-    tech: [
-      "Next.js 14",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Supabase",
-      "tRPC",
-      "React Query",
-    ],
-    company: "Zeta",
-    type: "Professional",
-  },
-  {
     title: "Visual Note",
     description:
       "AI-powered note taking app for transforming images into efficient notes",
-    tech: [
-      "Next.js 14",
-      "Tailwind CSS",
-      "Supabase",
-      "Lucia",
-      "tRPC",
-      "React Query",
-    ],
+    tech: ["Next.js 14", "Tailwind CSS", "Supabase", "tRPC", "React Query"],
     type: "Personal",
   },
 ];
