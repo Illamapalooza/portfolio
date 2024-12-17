@@ -1,10 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { FileText } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import {
   HoverCard,
   HoverCardContent,
@@ -18,24 +18,24 @@ const achievements = [
     description:
       "Awarded Indie Hacker Award at HOSTARI Labs SI AI-Enabled Hackathon",
     images: [
-      "/achievements/hostari1.jpg",
-      "/achievements/hostari2.jpg",
-      "/achievements/hostari4.jpg",
+      "./achievements/hostari1.jpg",
+      "./achievements/hostari2.jpg",
+      "./achievements/hostari4.jpg",
     ],
   },
   {
     title: "Top 10% TOPCIT Nationwide",
     description:
       "Placed in top 10% at Test of Practical Competency in ICT (TOPCIT)",
-    images: ["/achievements/topcit1.jpg", "/achievements/topcit2.jpg"],
+    images: ["./achievements/topcit1.jpg", "./achievements/topcit2.jpg"],
   },
   {
     title: "Google Solution Challenge Finalist",
     description: "4th Place at Google Solution Challenge 2022 School Level",
     images: [
-      "/achievements/google1.jpg",
-      "/achievements/google2.jpg",
-      "/achievements/google3.jpg",
+      "./achievements/google1.jpg",
+      "./achievements/google2.jpg",
+      "./achievements/google3.jpg",
     ],
   },
 ];
@@ -180,7 +180,7 @@ export function AboutSection() {
 
             <div className="flex gap-4">
               <Button asChild>
-                <Link href="/resume.pdf" target="_blank">
+                <Link href="public/resume.pdf" target="_blank">
                   <FileText className="mr-2 h-4 w-4" />
                   Download Resume
                 </Link>
@@ -294,14 +294,13 @@ export function AboutSection() {
                       {achievement.images.map((img, i) => (
                         <motion.div
                           key={i}
-                          className="relative aspect-video overflow-hidden rounded-lg bg-muted"
+                          className="relative flex justify-center items-center aspect-video overflow-hidden rounded-lg bg-muted"
                           whileHover={{ scale: 1.05 }}
                           transition={{ duration: 0.2 }}
                         >
-                          <Image
+                          <img
                             src={img}
                             alt={`${achievement.title} image ${i + 1}`}
-                            fill
                             className="object-cover transition-transform group-hover:scale-105"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />

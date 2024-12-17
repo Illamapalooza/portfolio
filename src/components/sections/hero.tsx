@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { motion } from "framer-motion";
@@ -5,7 +6,6 @@ import { Button } from "../ui/button";
 import { siteConfig } from "@/lib/constants";
 import { ArrowRight, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 export function HeroSection() {
@@ -44,7 +44,7 @@ export function HeroSection() {
                     3000,
                     "Fueled by Coffee and Code",
                     3000,
-                    "Donate Me a Coffee ☕",
+                    "Transforming Ideas Into Reality",
                     3000,
                   ]}
                   wrapper="span"
@@ -98,12 +98,10 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
             className="relative w-full aspect-square md:order-last rounded-full border-2 border-black"
           >
-            <Image
-              src="/developer-illustration.png"
+            <img
+              src="./developer-illustration.png"
               alt={siteConfig.name}
-              fill
               className="object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-full"
-              priority
             />
           </motion.div>
         </div>
