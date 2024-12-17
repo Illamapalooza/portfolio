@@ -1,8 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website - Julius Baliling
+
+A modern, responsive portfolio website built with Next.js and TailwindCSS. This portfolio features a clean design with smooth animations, interactive elements, and a fully responsive layout.
+
+## Features
+
+- 🎨 Modern and clean design
+- ⚡ Fast and responsive
+- 🌙 Smooth animations with Framer Motion
+- 📱 Mobile-first approach
+- 🎯 Interactive sections
+- 🔄 Dynamic content loading
+- 📊 Achievement showcase
+- 💼 Project portfolio display
+- 📝 Contact form integration
+
+## Technologies Used
+
+- **Framework**: Next.js 14 (React)
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide Icons
+- **Typography**: Geist Font
+- **Development**:
+  - TypeScript
+  - ESLint
+  - Prettier
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository:
 
 ```bash
 npm run dev
