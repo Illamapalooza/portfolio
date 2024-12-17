@@ -135,8 +135,8 @@ export function AboutSection() {
   });
 
   return (
-    <section id="about" className="py-20 px-20 bg-background">
-      <div className="w-full px-4 md:px-6">
+    <section id="about" className="py-20 px-4 sm:px-20 bg-background">
+      <div className="w-full px-2 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <motion.div
@@ -194,7 +194,7 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-2 gap-3 sm:gap-4"
           >
             {stats.map((stat, index) => (
               <motion.div key={index} whileHover={{ scale: 1.05 }}>
@@ -206,7 +206,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         viewport={{ once: true }}
-                        className="p-6 bg-muted/50 rounded-lg space-y-2 text-center cursor-pointer hover:bg-muted/70 transition-colors"
+                        className="p-4 sm:p-6 bg-muted/50 rounded-lg space-y-2 text-center cursor-pointer hover:bg-muted/70 transition-colors"
                       >
                         <h3 className="text-4xl font-bold text-primary">
                           {stat.number}
@@ -238,7 +238,7 @@ export function AboutSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="p-6 bg-muted/50 rounded-lg space-y-2 text-center hover:bg-muted/70 transition-colors"
+                    className="p-4 sm:p-6 bg-muted/50 rounded-lg space-y-2 text-center hover:bg-muted/70 transition-colors"
                   >
                     <h3 className="text-4xl font-bold text-primary">
                       {stat.number}
@@ -290,7 +290,7 @@ export function AboutSection() {
                     <p className="text-sm text-muted-foreground">
                       {achievement.description}
                     </p>
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                       {achievement.images.map((img, i) => (
                         <motion.div
                           key={i}
@@ -301,7 +301,7 @@ export function AboutSection() {
                           <img
                             src={img}
                             alt={`${achievement.title} image ${i + 1}`}
-                            className="object-cover transition-transform group-hover:scale-105"
+                            className="w-full h-full object-cover transition-transform group-hover:scale-105"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         </motion.div>

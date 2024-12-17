@@ -14,7 +14,7 @@ export const siteConfig = {
 };
 
 export const navigationLinks = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "/home" },
   { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },

@@ -10,8 +10,8 @@ import Link from "next/link";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 px-20 bg-background">
-      <div className="w-full px-4 md:px-6">
+    <section id="contact" className="py-20 px-4 sm:px-20 bg-background">
+      <div className="w-full px-2 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
